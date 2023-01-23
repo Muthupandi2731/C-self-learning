@@ -1,0 +1,35 @@
+Write a C++ program to find whether the given number is Prime number or not.
+coding//
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i,n,count=0,a;
+    cin>>n;
+    for(i=2;i<n;i++)
+    {
+        a=n%i;
+        {
+            if(a==0)
+            {
+            count++;
+            }
+        }
+    }
+    if(count==0)
+    {
+        cout<<"Prime Number";
+    }
+    else
+    {
+        cout<<"Not a Prime Number";
+    }
+}
+Sample Input:
+
+2
+
+Sample Output:
+
+Prime
+
