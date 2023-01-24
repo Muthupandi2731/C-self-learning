@@ -1,0 +1,29 @@
+coding//
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,n,sum=0,num1,a;
+    cin>>n;
+    for(i=1;i<n;i++)
+    {
+        a=n%i;
+        if(a==0)
+        {
+            sum=sum+i;
+        }
+    }
+        if(sum==n)
+        {
+            cout<<"Perfect Number";
+        }
+        else
+        {
+            cout<<"Not Perfect Number";
+        }
+}
+input:
+28
+output:
+Perfect Number
+    
