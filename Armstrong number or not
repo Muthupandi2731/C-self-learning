@@ -1,0 +1,26 @@
+coding//
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,sum=0,num1,a;
+    cin>>n;
+    num1=n;
+    while(n>0)
+    {
+        a=n%10;
+        sum=sum+a*a*a;
+        n=n/10;
+    }
+    if(sum==num1)
+    {
+        cout<<"Armstrong Number";
+    }else
+    {
+        cout<<"Not Armstrong Number";
+    }
+}
+  input:
+  153
+  output:
+  Armstrong Number
